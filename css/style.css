@@ -45,7 +45,7 @@ nav ul li {
   float: left;
 }
 nav ul li:not(:first-child) {
-  margin-left: 25px;
+  margin-left: 55px;
 }
 nav ul li a {
   display: inline-block;
@@ -61,7 +61,7 @@ nav ul li a:hover {
 }
 
 /* RESPONSIVE menu burger */
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 1000px) {
   .nav-container {
     position: fixed;
     top: 0;
