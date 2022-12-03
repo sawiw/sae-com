@@ -1,4 +1,5 @@
 
+
 .btn {
 border: solid  rgba(233, 0, 0, 0.699);
 height: 200%;
@@ -11,27 +12,28 @@ flex: 1 0 px;
 }
 
 .btn-container  { 
-    padding: .5vw;
+    /* padding: .5vw; */
     font-size: 0;
     flex-flow: row wrap; 
     display: flex;
     height: fit-content;
+    z-index: 9999;
   }
   main .btn-container div { 
     flex: auto; 
     width: 250px; 
-    margin: 2vw; 
+    margin: 3vw; 
     transition: transform 0.5s;
   }
+
   main div img { 
     width: 100%; 
     height: auto; 
     aspect-ratio: 1/1;
+
   }
   
   main .btn-container div:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform 0.5s;
-    background-color: black;
-    box-shadow: 0 0 2em red;
   }

@@ -1,4 +1,5 @@
-.sous-titre-2 {
+
+h2 {
     margin-top: 20.0pt;
     margin-right: 0in;
     margin-bottom: 6.0pt;
@@ -11,8 +12,32 @@
     font-family: "Roboto Serif Medium";
     font-weight: normal;
 }
-
+main {
+    text-align: justify;
+}
 .sous-texte-3 {
     margin-left: 1.5in;
     text-indent: -.25in;
 }
+
+h2,h3 {
+    margin-top: 8vh;
+}
+
+p,q{
+    margin-top: 3vh;
+}
+
+li + img{
+    margin-bottom: 4vh;
+}
+
+li {
+    margin-bottom: 4vh;
+}
+
+@media screen and (min-width:1200px) {
+    main {
+      margin: 0 12%;
+    }
+  }

@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/accueil.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 
@@ -53,27 +53,12 @@
       <div><a href=""><img src="https://via.placeholder.com/250" alt></a></div>
       <div><a href=""><img src="https://via.placeholder.com/250" alt></a></div>
     </div>
-    
+    <a href="#header" id="scro" class="scrollTop"><img src="images/topScroll.png" alt="scrollTop"></a>
   </main>
 
   <footer>
     coucou
   </footer>
 </body>
-<script>
-  window.onscroll = function() {scrollBar()};
-
-function scrollBar() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-  if (scrolled > 70) {
-    document.getElementById("myBar").style.display = "hidden";
-  }
-  else {
-    document.getElementById("myBar").style.backgroundColor = "green";
-  }
-} 
-  </script>
+<script src="js/main.js"></script>
 </html>
