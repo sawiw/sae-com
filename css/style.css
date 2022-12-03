@@ -9,7 +9,7 @@ body{
   min-height: 100vh;
   display: flex !important ;
   flex-direction: column !important;
-
+  scroll-behavior: smooth;
 }
 
 header {
@@ -21,7 +21,7 @@ header {
 
 main{
   margin: 0 7%;
-  min-height: fit-content;
+  min-height: 95vh;
 }
 
 footer {
@@ -33,6 +33,13 @@ footer {
   height: 50px;
 }
 
+
+.scrollTop img{
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  max-width: 50px;
+}
 
 /* Menu Burger */
 nav {
@@ -58,6 +65,20 @@ nav ul li a {
 nav ul li a:hover {
   color: #808080;
   text-decoration: none;
+}
+
+nav ul li ul, nav ul li li  {
+  display: none;
+}
+
+nav ul li:hover ul, nav ul li:hover li {
+  display: block;
+}
+
+nav ul li:hover ul{
+  flex-direction: column;
+  position: absolute;
+  background-color: rgb(255, 0, 0);
 }
 
 /* RESPONSIVE menu burger */

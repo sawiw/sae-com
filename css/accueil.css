@@ -21,9 +21,22 @@ flex: 1 0 px;
     flex: auto; 
     width: 250px; 
     margin: 2vw; 
+    transition: transform 0.5s;
   }
   main div img { 
     width: 100%; 
     height: auto; 
     aspect-ratio: 1/1;
+  }
+  
+  main .btn-container div:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    background-color: black;
+    box-shadow: 0 0 2em red;
+  }
+
+  .scrollTop img{
+    width: 20px;
+    height: 20px;
   }
