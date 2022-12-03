@@ -56,7 +56,7 @@ main{
 }
 
 footer {
-  background-color: var(--pink);
+  background-color: black;
   position: relative;
   margin-top: auto;
   bottom: 0;
