@@ -1,0 +1,29 @@
+
+.btn {
+border: solid  rgba(233, 0, 0, 0.699);
+height: 200%;
+background-color: aliceblue;
+flex: 1 0 px;
+}
+
+.main article{
+    margin-bottom: 500px;
+}
+
+.btn-container  { 
+    padding: .5vw;
+    font-size: 0;
+    flex-flow: row wrap; 
+    display: flex;
+    height: fit-content;
+  }
+  main .btn-container div { 
+    flex: auto; 
+    width: 250px; 
+    margin: 2vw; 
+  }
+  main div img { 
+    width: 100%; 
+    height: auto; 
+    aspect-ratio: 1/1;
+  }
