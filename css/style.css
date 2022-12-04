@@ -27,6 +27,23 @@ div img {
   border-radius: 4px;
 }
 
+.iframe {
+  left: 0;
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-bottom: 56.092%;
+}
+
+div iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 0;
+}
+
 body {
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: 400;
@@ -35,7 +52,7 @@ body {
   display: flex !important;
   flex-direction: column !important;
   background-image: url(/images/Meteor.svg);
-  
+
 }
 
 article {
@@ -43,7 +60,9 @@ article {
 
   padding: 4vw;
 }
-main p, main li {
+
+main p,
+main li {
   font-size: 1.3rem;
   font-family: 'Roboto', sans-serif;
 }
@@ -68,6 +87,7 @@ header {
 header .logo {
   max-width: 45px;
 }
+
 /* ===================== Barre statut Scroll ======================== */
 .scrollStatus {
   position: sticky;
@@ -89,6 +109,7 @@ header .logo {
   background: var(--pink);
   width: 0%;
 }
+
 /* ============================== FIN HEADER =============================== */
 
 
@@ -162,8 +183,9 @@ nav ul li:hover ul {
   padding-top: 15px;
   border: #f2849e 1px solid;
   border-radius: 6px;
-  
+
 }
+
 nav ul li:hover ul li {
   margin: 0;
   padding: 0;
@@ -175,6 +197,7 @@ nav ul li:hover ul li a {
   display: block;
   border-radius: 5px;
 }
+
 nav ul li:hover ul li a:hover {
   color: #1f2227;
   background-color: #f2849e;
@@ -256,6 +279,7 @@ nav ul li:hover ul li a:hover {
     display: block;
     position: absolute;
   }
+
   /*=========================== Barres MB ===========================*/
   .nav-open i {
     display: block;
@@ -319,6 +343,7 @@ nav ul li:hover ul li a:hover {
 .hidden {
   display: none;
 }
+
 /* =============================== FIN MB ================================= */
 
 
@@ -354,7 +379,7 @@ footer {
 /*================== Bouton Retour en Haut ===========================*/
 /* ================================================================== */
 
-.scrollTop  {
+.scrollTop {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -365,6 +390,7 @@ footer {
 .scrollTop:hover img {
   filter: invert(71%) sepia(16%) saturate(2177%) hue-rotate(300deg) brightness(99%) contrast(91%);
 }
+
 /* ========================== FIN BREH ============================== */
 
 
@@ -379,27 +405,31 @@ footer {
     font-size: 1.75em;
   }
 }
-@media screen and (max-width: 736px){
+
+@media screen and (max-width: 736px) {
   h1 {
     font-size: 2em;
-      margin: 0 0 1em 0;
+    margin: 0 0 1em 0;
   }
+
   h2 {
     font-size: 1.2em;
   }
 
-  main p, main li ,article p{
+  main p,
+  main li,
+  article p {
     font-size: 1.1em;
   }
+
   nav ul li ul {
     display: block;
     position: relative;
     margin-top: 15vh;
   }
+
   nav ul {
     display: flex;
     flex-direction: column;
   }
 }
-
-  
