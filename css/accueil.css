@@ -18,22 +18,43 @@ flex: 1 0 px;
     display: flex;
     height: fit-content;
     z-index: 9999;
+    justify-content: center;
+    align-self: center;
   }
   main .btn-container div { 
     flex: auto; 
     width: 250px; 
     margin: 3vw; 
     transition: transform 0.5s;
+    max-width: 400px;
   }
 
   main div img { 
     width: 100%; 
     height: auto; 
     aspect-ratio: 1/1;
-
+    opacity: 0.8;
+    transition: ease-in-out transform 0.5s;
   }
   
   main .btn-container div:hover {
     transform: scale(1.05);
     transition: transform 0.5s;
+  }
+  
+  main .btn-container div:hover img {
+    opacity: 1;
+    transition: ease-in-out transform 0.5s;
+  }
+
+  main div span {
+      z-index: 999;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+  }
+
+  main .btn-container div:hover{
+    opacity: 1;
+    transition: ease-in-out transform 0.5s;
   }
