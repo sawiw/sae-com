@@ -51,7 +51,7 @@ body {
   min-height: 100vh;
   display: flex !important;
   flex-direction: column !important;
-  background-image: url(/images/Meteor.svg);
+  background-image: url(../images/Meteor.svg);
 
 }
 

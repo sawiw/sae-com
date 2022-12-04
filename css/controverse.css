@@ -24,3 +24,7 @@ li {
       margin: 0 12%;
     }
   }
+
+div img {
+    max-height: 300px;
+}
