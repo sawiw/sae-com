@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@500&display=swap');
+
+
+.titre {
+  text-align: center;
+}
+
+.article5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+p,h2 {
+  font-family: 'M PLUS 1', sans-serif;
+  font-size:x-large;  
+}
+.infor,
+.emailDiv,
+.textAreaDiv,
+.submit,
+.localisation {
+  margin-top: 4%;
+}
+
+.logo {
+  height: 45%;
+}
+.infor {
+  display: flex;
+  flex-direction: row;
+
+
+  justify-content: space-between;
+
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 76%;
+}
+
+.infor div {
+  display: flex;
+  flex-direction: column;
+}
+
+.emailDiv {
+
+  margin-left: 12%;
+  margin-right: auto;
+  width: 30%;
+
+}
+
+.emailDiv div {
+  display: flex;
+  flex-direction: column;
+}
+
+.emailDiv input {
+  width: 100%;
+}
+
+label, h1 ,h2{
+  font-family: 'M PLUS 1', sans-serif;
+  font-size:x-large;
+  color: var(--pink);
+}
+#postal{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 20vw;
+  height: 3vh;
+  
+  border-radius: 5px;
+}
+
+textarea,
+
+.localisation {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   margin-top: 2%;
+    width: 76%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.localisation select{
+  width: 22.9vh;
+  height: 4vh;
+ 
+  border-color: black;
+}
+.textAreaDiv {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 76%;
+
+}
+#ouuu{
+  margin-left: 10%;
+ 
+}
+.entendu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 10%;
+  
+}
+
+.entendu div {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column
+}
+
+.textAreaDiv div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1%;
+}
+
+.textAreaDiv input {
+  width: 100%;
+}
+
+.submit {
+
+  margin-left: auto;
+  margin-right: auto;
+}
+#second-button {
+  display: none;
+}
+
+:root {
+  --text-color: hsla(210, 50%, 85%, 1);
+  --shadow-color: hsla(210, 40%, 52%, .4);
+  --btn-color: #f2849e;
+  --bg-color: #141218;
+  --pink : #f2849e;
+}
+
+.article5 p {
+  margin: 0 9vw;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+#contact > article > a {
+    
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0%);
+    color: var(--pink);
+    text-decoration: none;
+    font-size: 2em;
+    display: inline-block;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    padding: 0.5em 2em;
+    border: 2px solid var(--pink);
+    transition: 0.02s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+#contact > article > a::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: var(--pink);
+    transition: 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+    z-index: -1;
+}
+#contact > article > a::after {
+    content: "";
+    display: inline-block;
+    background-image: url("https://cdn-icons-png.flaticon.com/128/109/109617.png");
+    position: absolute;
+    top: 0;
+    left: calc(100% - 3em);
+    right: 3em;
+    bottom: 0;
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: right 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+}
+
+#contact > article > a:hover::before {
+    left: calc(100% - 3em);
+    right: 0;
+    transition: 0.3s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+#contact > article > a:hover::after {
+    right: 0;
+    transition: right 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+@media(max-width :768px) {
+  .article5 {
+    font-size: 3vh;
+  }
+
+  .infor {
+    flex-direction: column-reverse;
+  }
+
+  input {
+    width: 34vh;
+    height: 4vh;
+  }
+  #contact > article > a {
+    margin-top: 8%;
+    padding: 1%;
+  }
+  a::before {
+    content: "";
+    display: inline-block;
+    
+  }
+  a::after {
+    
+    display: inline-block;
+    position: absolute;
+    
+    
+}
+
+  
+
+  .infor,
+.emailDiv,
+.textAreaDiv,
+.submit {
+  margin-top: 20%;
+}
+#nom {
+  margin-bottom: 10%;
+}
+
+.emailDiv {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 78%;
+
+}
+}
+
+@media screen and (min-width:768px){
+  #contact > article > a:hover {
+    padding: 0.5em 3.5em 0.5em 0.5em;
+}
+}
+
+
+/* CONTACT KARIMMMM */
