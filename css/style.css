@@ -5,6 +5,8 @@
 }
 
 
+/* GENERAL */
+
 
 * {
   box-sizing: border-box;
@@ -46,6 +48,9 @@ main p, main li {
   font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
 
 /* ================================================================== */
 /* ============================ HEADER ============================== */
@@ -147,8 +152,33 @@ nav ul li:hover li {
 
 nav ul li:hover ul {
   flex-direction: column;
+  justify-content: center;
   position: absolute;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 255);
+  display: block;
+  margin: 0;
+  padding: 0;
+  z-index: 99999999;
+  padding-top: 15px;
+  border: #f2849e 1px solid;
+  border-radius: 6px;
+  
+}
+nav ul li:hover ul li {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li:hover ul li a {
+  color: #f2849e;
+  padding: 10px 20px;
+  display: block;
+  border-radius: 5px;
+}
+nav ul li:hover ul li a:hover {
+  color: #1f2227;
+  background-color: #f2849e;
+  border-radius: 5px;
 }
 
 
@@ -222,7 +252,10 @@ nav ul li:hover ul {
     border-radius: 50%;
   }
 
-
+  nav ul li:hover ul {
+    display: block;
+    position: absolute;
+  }
   /*=========================== Barres MB ===========================*/
   .nav-open i {
     display: block;
@@ -358,7 +391,15 @@ footer {
   main p, main li ,article p{
     font-size: 1.1em;
   }
+  nav ul li ul {
+    display: block;
+    position: relative;
+    margin-top: 15vh;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-  
   
