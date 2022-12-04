@@ -275,9 +275,9 @@ nav ul li:hover ul li a:hover {
     border-radius: 50%;
   }
 
-  nav ul li:hover ul {
-    display: block;
-    position: absolute;
+  nav ul li ul {
+    display: none !important;
+
   }
 
   /*=========================== Barres MB ===========================*/
@@ -422,14 +422,4 @@ footer {
     font-size: 1.1em;
   }
 
-  nav ul li ul {
-    display: block;
-    position: relative;
-    margin-top: 15vh;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: column;
-  }
 }
