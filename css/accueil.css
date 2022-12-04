@@ -4,7 +4,7 @@
 border: solid  rgba(233, 0, 0, 0.699);
 height: 200%;
 background-color: aliceblue;
-flex: 1 0 px;
+flex: 1 0;
 }
 
 .main article{
@@ -57,4 +57,14 @@ flex: 1 0 px;
   main .btn-container div:hover{
     opacity: 1;
     transition: ease-in-out transform 0.5s;
+  }
+
+  .texteImg {
+    position: relative;
+    text-align: center;
+  }
+
+  .texteImg a span {
+    position: relative;
+    text-align: center;
   }
